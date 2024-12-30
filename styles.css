@@ -1,0 +1,147 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url(../image/motivational-bg.jpg.jpg);
+    background-size: cover;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* Navigation Bar */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3)
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a, nav ul li button {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+}
+nav ul li a:hover, nav ul li button:hover {
+    background: #ff9800;
+    color: #000;
+}
+
+/* Main Section */
+main {
+    margin-top: 80px; /* Push content below the navbar */
+    padding: 20px;
+}
+
+#quote-box {
+    animation: fadeIn 1s ease-in-out;
+}
+
+#saved-quotes {
+    margin-top: 20px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid #333;
+    border-radius: 8px;
+     list-style: none;
+    color: #000;
+}
+
+#saved-quotes li {
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+button {
+    padding: 10px 20px;
+    background: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background: #ff9800;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background: #121212;
+    color: #fff;
+}
+body.dark-mode button {
+    background: #333;
+    color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+    #quote {
+        font-size: 1.4rem;
+    }
+    button {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+ }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+}
+/* Quote Display Block */
+#quote-box {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.8);
+    border: 2px solid #333;
+    border-radius: 8px;
+    color: #000;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    font-size: 1.4rem; 
+}
+
+#quote {
+    font-size: 1.6rem; /* Larger size for the quote */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#author {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #555;
+}
+.saved-quotes p {
+    font-size: 18px;
+}
